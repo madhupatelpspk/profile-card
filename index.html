@@ -101,6 +101,57 @@
     .about-btn:hover {
       background: #283e8e;
     }
+    /* Full Screen Mobile View */
+    @media (max-width: 600px) {
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .profile-card {
+        width: 100vw;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 24px 8vw 24px 8vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .profile-photo {
+        width: 55vw;
+        height: 55vw;
+        min-width: 120px;
+        min-height: 120px;
+        max-width: 260px;
+        max-height: 260px;
+      }
+      .skills-list {
+        gap: 6px;
+      }
+      .social-links {
+        gap: 12px;
+      }
+      .about-btn {
+        width: 90vw;
+        margin: 8px 0 0 0;
+        font-size: 1.1em;
+      }
+      .profile-name {
+        font-size: 1.2em;
+      }
+      .profile-bio {
+        font-size: 0.98em;
+      }
+    }
   </style>
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
