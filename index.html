@@ -184,5 +184,31 @@
     <a href="https://madhupatel.netlify.app" class="about-btn" target="_blank">About Me</a>
     <a href="https://youtube.com/@youtuberzx" class="about-btn" target="_blank">SUBSCRIBE</a>
 </div>
+    <button class="quote-btn" onclick="showQuote()">Get a Love Quote</button>
+    <div class="quote-box" id="quoteBox"></div>
+  </div>
+  <script>
+    const loveQuotes = [
+      "Love is composed of a single soul inhabiting two bodies. – Aristotle",
+      "You are my today and all of my tomorrows. – Leo Christopher",
+      "In all the world, there is no heart for me like yours. – Maya Angelou",
+      "I saw that you were perfect, and so I loved you. – Angelita Lim",
+      "To love and be loved is to feel the sun from both sides. – David Viscott",
+      "I love you not only for what you are, but for what I am when I am with you. – Roy Croft",
+      "If I know what love is, it is because of you. – Hermann Hesse",
+      "Every time I see you, I fall in love all over again.",
+      "You are the source of my joy, the center of my world and the whole of my heart.",
+      "I would rather spend one lifetime with you than face all the ages of this world alone. – J.R.R. Tolkien"
+    ];
+
+    function showQuote() {
+      const quoteBox = document.getElementById('quoteBox');
+      const randomIndex = Math.floor(Math.random() * loveQuotes.length);
+      quoteBox.textContent = loveQuotes[randomIndex];
+      quoteBox.classList.add('visible');
+    }
+  </script>
+</body>
+</html>
 </body>
 </html
