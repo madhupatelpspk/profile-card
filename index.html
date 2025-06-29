@@ -129,19 +129,27 @@
       color: #15803d;
       text-decoration: underline;
     /* Full Screen Mobile View */
-    @media (max-width: 600px) {
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        min-height: 100vh;
-        height: 100vh;
-        width: 100vw;
-        padding: 0;
-        box-sizing: border-box;
-      }
+      @media (max-width: 600px) {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    background: #f5f7fa;
+  }
+  body {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+    
       .profile-card {
         width: 100vw;
         min-height: 100vh;
